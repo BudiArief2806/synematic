@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pinjaman online</title>
+</head>
+<body>
+    <header style="background: black; color: green; text-align:center;padding: 20px;">
+        <h1>Form Pinjaman Online Budi.com </h1>
+    </header>
+    
+            <section>
+        
+            <form action="Data" method="dialog">
+            <fieldset style="margin-top: 5px;">
+                <legend><strong>Bidoata</strong></legend>
+                <label for="Email">Email</label>
+                <input type="Email"><br><br>
+                <label for="Pasword">Pasword</label>
+                <input type="password"><br><br>
+                <label for="Nama">Nama </label>
+                <input type="Nama"id="full name" placeholder="Nama anda "><br><br>
+                <label for="Tanggal lahir">Tanggal lahir</label>
+                <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2025-12-31"> <br><br>
+                <label for="NIK">NIK</label>
+                <input type="NIK"><br><br>
+                <input type="submit" value="submit" />
+                
+            </section>
+                    
+                </fieldset>
+                     
+                <section>
+
+                    <fieldset style="margin-top: 5px;">
+                        
+                        <legend><strong>
+                            Pilih sesuai dirimu
+                        </strong></legend>
+                        
+                        <label for="Cicilan">Cicilan : </label><br>
+                        <select id="Cicilan"><br>
+                            <option value="choose">Please choose option</option><br><br>
+                            <option value="1 bulan">1 bulan</option>
+                            <option value="3 bulan">3 bulan</option>
+                            <option value="6 bulan">6 bulan</option>
+                            <option value="12 bulan">12 bulan</option>
+                        </select><br><br>
+                        <nav>
+                            
+                            <label for="Berapa pinjamanmu "> Berapa pinjaman mu?</label><br>
+                            <select name="Pilih" id="Pilih">
+                                <option value="1 Juta">1 Juta</option>
+                                <option value="3 Juta">3 Juta</option>
+                                <option value="5 Juta">5 Juta</option>
+                            </select><br><br>
+                        </nav>
+                        
+                        <div>
+                            <label for="Bunga">Bunga</label>  <br> 
+                            <input type="radio" id=" 10% " name="sesuai" value ="10"/>
+                            <label for="10%">10%</label><br>
+                            <input type="radio" id="25%" name="sesuai" value="25%" required/>
+                            <label for="25%">25%</label><br>
+                            <input type="radio" id="contactChoice1" name="contact" value="75%" required /> 
+                            <label for="contactChoice1">75%</label>
+                            
+                        </fieldset>
+                    </section>
+                          
+                    
+                        
+                         
+                         <section>
+                             <section style="margin-top: 10px;">
+                             <fieldset>
+                                    <label for="KTP"> Upload kartu Tanda penduduk</label><br>
+
+                                    <form action="/upload"method="post"enctype="multipart/form-data"><br>
+                                        <div>
+                                            <input type="file" name="fileUpload"><br><br>
+                                            <input type="submit" value="Upload"><br><br>
+                                            <label for="file">File progress :</label><br><br>
+                                            <progress id="file" max ="100" value="50">50%</progress><br><br>
+                                            <label for="Jenis kelamin">Jenis kelamin :</label><br>
+                                            <input type="radio" id="Jenis kelamin" name="Jenis kelamin" value="Jenis kelamin"/><br>
+                                            <label>Laki Laki</label><br>
+                                            <input type="radio" id="Gender" name="Gender" value="Gender"/><br>
+                                            <option value="Perempuan">Perempuan</option><br>
+                                        </div>
+                                            <label for="story">Surat permohonan </label><br>
+                                            <textarea id="story" name="story" rows="10" cols="40"></textarea>
+                                            
+                                            
+                                    </form>
+                                
+                            </section>
+                                </fieldset>
+                                <footer>
+                                    <p>&copy; BudiArief 2025 . All rights reserved .</p>
+                                </footer>
+                                  
+
+
+                               
+                        
+                                    
+                    
+                            </form>
+    </body>
+</html>
